@@ -1,0 +1,15 @@
+- name: Install my packages
+  hosts: all
+  tasks:
+    -  name: Install sshpass
+       apt:
+        name: sshpass
+        state: present
+    -  name: Install htop
+       apt:
+        name: htop
+        state: present
+    -  name: Install vim
+       apt:
+        name: vim
+        state: present
