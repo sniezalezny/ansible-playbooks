@@ -5,6 +5,10 @@
        apt:
         name: sshpass
         state: present
+    -  name: Install net-tools
+       apt:
+        name: net-tools
+        state: present
     -  name: Install htop
        apt:
         name: htop
@@ -15,6 +19,5 @@
         state: present
     -  name: Install nano
        apt:
-        name: nano
+        name: 
         state: present
-   
