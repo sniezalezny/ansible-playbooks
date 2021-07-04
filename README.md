@@ -12,25 +12,6 @@ example:`ansible-playbook -i hosts.yml -u root ansible-playbooks/update-upgrade.
 
 If You want simple-test connection with your serwers, You can use:
 
-ansible -i hosts.yml all -u root -k -m ping 
-
-example hosts.yml file:
-
-
-`all:
-  children:
-    default:
-      hosts:
-        agent1:
-          ansible_port: 8822
-          ansible_user: root
-        agent2:
-          ansible_port: 8823
-          ansible_user: root
-        agent3:
-          ansible_port: 8824
-          ansible_user: root
-      vars:
-        ansible_python_interpreter: /usr/bin/python3.5`
+ansible -i hosts.yml all -u root -k -m ping
 
 
